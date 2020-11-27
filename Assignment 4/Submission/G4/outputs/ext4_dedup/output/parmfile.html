@@ -1,0 +1,9 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: /home/theharshshow/vdbench/workload1
+
+dedupunit=1m,dedupratio=2
+fsd=fsd1,anchor=$anchor,depth=2,width=3,files=50,size=1m
+    variable substitution: fsd=fsd1,anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e,depth=2,width=3,files=50,size=1m
+fwd=fwd1,fsd=fsd1,operation=read,xfersize=4k,fileio=sequential,fileselect=random,threads=2
+rd=rd1,fwd=fwd1,fwdrate=max,format=yes,elapsed=30,interval=1

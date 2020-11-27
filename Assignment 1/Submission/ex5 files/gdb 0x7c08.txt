@@ -1,0 +1,400 @@
+(gdb) b *0x7c00
+Breakpoint 1 at 0x7c00
+(gdb) c
+Continuing.
+[   0:7c00] => 0x7c00:	cli    
+
+Thread 1 hit Breakpoint 1, 0x00007c00 in ?? ()
+(gdb) si
+[   0:7c01] => 0x7c01:	xor    %eax,%eax
+0x00007c01 in ?? ()
+(gdb) 
+[   0:7c03] => 0x7c03:	mov    %eax,%ds
+0x00007c03 in ?? ()
+(gdb) 
+[   0:7c05] => 0x7c05:	mov    %eax,%es
+0x00007c05 in ?? ()
+(gdb) 
+[   0:7c07] => 0x7c07:	mov    %eax,%ss
+0x00007c07 in ?? ()
+(gdb) 
+[   0:7c09] => 0x7c09:	in     $0x64,%al
+0x00007c09 in ?? ()
+(gdb) 
+[   0:7c0b] => 0x7c0b:	test   $0x2,%al
+0x00007c0b in ?? ()
+(gdb) 
+[   0:7c0d] => 0x7c0d:	jne    0x7c09
+0x00007c0d in ?? ()
+(gdb) 
+[   0:7c0f] => 0x7c0f:	mov    $0xd1,%al
+0x00007c0f in ?? ()
+(gdb) 
+[   0:7c11] => 0x7c11:	out    %al,$0x64
+0x00007c11 in ?? ()
+(gdb) 
+[   0:7c13] => 0x7c13:	in     $0x64,%al
+0x00007c13 in ?? ()
+(gdb) 
+[   0:7c15] => 0x7c15:	test   $0x2,%al
+0x00007c15 in ?? ()
+(gdb) 
+[   0:7c17] => 0x7c17:	jne    0x7c13
+0x00007c17 in ?? ()
+(gdb) 
+[   0:7c19] => 0x7c19:	mov    $0xdf,%al
+0x00007c19 in ?? ()
+(gdb) 
+[   0:7c1b] => 0x7c1b:	out    %al,$0x60
+0x00007c1b in ?? ()
+(gdb) 
+[   0:7c1d] => 0x7c1d:	lgdtl  (%esi)
+0x00007c1d in ?? ()
+(gdb) 
+[   0:7c22] => 0x7c22:	mov    %cr0,%eax
+0x00007c22 in ?? ()
+(gdb) 
+[   0:7c25] => 0x7c25:	or     $0x1,%ax
+0x00007c25 in ?? ()
+(gdb) 
+[   0:7c29] => 0x7c29:	mov    %eax,%cr0
+0x00007c29 in ?? ()
+(gdb) 
+[   0:7c2c] => 0x7c2c:	ljmp   $0xb866,$0x87c39
+0x00007c2c in ?? ()
+(gdb) 
+[f000:e05b]    0xfe05b:	cmpw   $0xffc8,%cs:(%esi)
+0x0000e05b in ?? ()
+(gdb) 
+[f000:e062]    0xfe062:	jne    0xd241d0b2
+0x0000e062 in ?? ()
+(gdb) 
+[f000:d0b0]    0xfd0b0:	cli    
+0x0000d0b0 in ?? ()
+(gdb) 
+[f000:d0b1]    0xfd0b1:	cld    
+0x0000d0b1 in ?? ()
+(gdb) 
+[f000:d0b2]    0xfd0b2:	mov    $0xdb80,%ax
+0x0000d0b2 in ?? ()
+(gdb) 
+[f000:d0b8]    0xfd0b8:	mov    %eax,%ds
+0x0000d0b8 in ?? ()
+(gdb) 
+[f000:d0ba]    0xfd0ba:	mov    %eax,%ss
+0x0000d0ba in ?? ()
+(gdb) 
+[f000:d0bc]    0xfd0bc:	mov    $0xf898,%sp
+0x0000d0bc in ?? ()
+(gdb) 
+[f000:d0c2]    0xfd0c2:	jmp    0x5476ca07
+0x0000d0c2 in ?? ()
+(gdb) 
+[f000:ca05]    0xfca05:	push   %si
+0x0000ca05 in ?? ()
+(gdb) 
+[f000:ca07]    0xfca07:	push   %bx
+0x0000ca07 in ?? ()
+(gdb) 
+[f000:ca09]    0xfca09:	push   %dx
+0x0000ca09 in ?? ()
+(gdb) 
+[f000:ca0b]    0xfca0b:	mov    $0x8f,%cl
+0x0000ca0b in ?? ()
+(gdb) 
+[f000:ca0d]    0xfca0d:	mov    %cl,%al
+0x0000ca0d in ?? ()
+(gdb) 
+[f000:ca0f]    0xfca0f:	out    %al,$0x70
+0x0000ca0f in ?? ()
+(gdb) 
+[f000:ca11]    0xfca11:	in     $0x71,%al
+0x0000ca11 in ?? ()
+(gdb) 
+[f000:ca13]    0xfca13:	movzbw %al,%si
+0x0000ca13 in ?? ()
+(gdb) 
+[f000:ca17]    0xfca17:	mov    %si,%dx
+0x0000ca17 in ?? ()
+(gdb) 
+[f000:ca1a]    0xfca1a:	mov    %dl,0x24(%si)
+0x0000ca1a in ?? ()
+(gdb) 
+[f000:ca1f]    0xfca1f:	mov    %cl,%al
+0x0000ca1f in ?? ()
+(gdb) 
+[f000:ca21]    0xfca21:	out    %al,$0x70
+0x0000ca21 in ?? ()
+(gdb) 
+[f000:ca23]    0xfca23:	xor    %bx,%bx
+0x0000ca23 in ?? ()
+(gdb) 
+[f000:ca26]    0xfca26:	mov    %bl,%al
+0x0000ca26 in ?? ()
+(gdb) 
+[f000:ca28]    0xfca28:	out    %al,$0x71
+0x0000ca28 in ?? ()
+(gdb) 
+[f000:ca2a]    0xfca2a:	push   %si
+0x0000ca2a in ?? ()
+(gdb) 
+[f000:ca2c]    0xfca2c:	pushw  $0xd847
+0x0000ca2c in ?? ()
+(gdb) 
+[f000:ca32]    0xfca32:	callw  0xe2ad
+0x0000ca32 in ?? ()
+(gdb) 
+[f000:e2af]    0xfe2af:	lea    0x24(%si),%dx
+0x0000e2af in ?? ()
+(gdb) 
+[f000:e2b5]    0xfe2b5:	mov    0x24(%si),%ax
+0x0000e2b5 in ?? ()
+(gdb) 
+[f000:e2bb]    0xfe2bb:	callw  0xec60
+0x0000e2bb in ?? ()
+(gdb) 
+[f000:ec62]    0xfec62:	push   %bp
+0x0000ec62 in ?? ()
+(gdb) 
+[f000:ec64]    0xfec64:	push   %di
+0x0000ec64 in ?? ()
+(gdb) 
+[f000:ec66]    0xfec66:	push   %si
+0x0000ec66 in ?? ()
+(gdb) 
+[f000:ec68]    0xfec68:	push   %bx
+0x0000ec68 in ?? ()
+(gdb) 
+[f000:ec6a]    0xfec6a:	sub    $0x8,%sp
+0x0000ec6a in ?? ()
+(gdb) 
+[f000:ec6e]    0xfec6e:	mov    %ax,(%si)
+0x0000ec6e in ?? ()
+(gdb) 
+[f000:ec73]    0xfec73:	mov    %dx,%bx
+0x0000ec73 in ?? ()
+(gdb) 
+[f000:ec76]    0xfec76:	mov    (%si),%ax
+0x0000ec76 in ?? ()
+(gdb) 
+[f000:ec7b]    0xfec7b:	mov    %cs:(%bx,%si),%al
+0x0000ec7b in ?? ()
+(gdb) 
+[f000:ec7f]    0xfec7f:	test   %al,%al
+0x0000ec7f in ?? ()
+(gdb) 
+[f000:ec81]    0xfec81:	je     0x254bef08
+0x0000ec81 in ?? ()
+(gdb) 
+[f000:ec85]    0xfec85:	cmp    $0x25,%al
+0x0000ec85 in ?? ()
+(gdb) 
+[f000:ec87]    0xfec87:	jne    0xfec9e
+0x0000ec87 in ?? ()
+(gdb) 
+[f000:ec9e]    0xfec9e:	movsbw %al,%ax
+0x0000ec9e in ?? ()
+(gdb) 
+[f000:eca2]    0xfeca2:	jmp    0xfa8feef0
+0x0000eca2 in ?? ()
+(gdb) 
+[f000:eeee]    0xfeeee:	callw  0x6dbf
+0x0000eeee in ?? ()
+(gdb) 
+[f000:6dc1]    0xf6dc1:	mov    %cs:(%esi),%edx
+0x00006dc1 in ?? ()
+(gdb) 
+[f000:6dc6]    0xf6dc6:	test   %edx,%edx
+0x00006dc6 in ?? ()
+(gdb) 
+[f000:6dc8]    0xf6dc8:	je     0xf6dcb
+0x00006dc8 in ?? ()
+(gdb) 
+[f000:6dcb]    0xf6dcb:	retw   
+0x00006dcb in ?? ()
+(gdb) 
+[f000:eef4]    0xfeef4:	mov    (%si),%si
+0x0000eef4 in ?? ()
+(gdb) 
+[f000:eef9]    0xfeef9:	lea    0x1(%bp),%ax
+0x0000eef9 in ?? ()
+(gdb) 
+[f000:eefe]    0xfeefe:	mov    %ax,(%si)
+0x0000eefe in ?? ()
+(gdb) 
+[f000:ef03]    0xfef03:	jmp    0x8376ec78
+0x0000ef03 in ?? ()
+(gdb) 
+[f000:ec76]    0xfec76:	mov    (%si),%ax
+0x0000ec76 in ?? ()
+(gdb) 
+[f000:ec7b]    0xfec7b:	mov    %cs:(%bx,%si),%al
+0x0000ec7b in ?? ()
+(gdb) 
+[f000:ec7f]    0xfec7f:	test   %al,%al
+0x0000ec7f in ?? ()
+(gdb) 
+[f000:ec81]    0xfec81:	je     0x254bef08
+0x0000ec81 in ?? ()
+(gdb) 
+[f000:ec85]    0xfec85:	cmp    $0x25,%al
+0x0000ec85 in ?? ()
+(gdb) 
+[f000:ec87]    0xfec87:	jne    0xfec9e
+0x0000ec87 in ?? ()
+(gdb) 
+[f000:ec9e]    0xfec9e:	movsbw %al,%ax
+0x0000ec9e in ?? ()
+(gdb) 
+[f000:eca2]    0xfeca2:	jmp    0xfa8feef0
+0x0000eca2 in ?? ()
+(gdb) 
+[f000:eeee]    0xfeeee:	callw  0x6dbf
+0x0000eeee in ?? ()
+(gdb) 
+[f000:6dc1]    0xf6dc1:	mov    %cs:(%esi),%edx
+0x00006dc1 in ?? ()
+(gdb) 
+[f000:6dc6]    0xf6dc6:	test   %edx,%edx
+0x00006dc6 in ?? ()
+(gdb) 
+[f000:6dc8]    0xf6dc8:	je     0xf6dcb
+0x00006dc8 in ?? ()
+(gdb) 
+[f000:6dcb]    0xf6dcb:	retw   
+0x00006dcb in ?? ()
+(gdb) 
+[f000:eef4]    0xfeef4:	mov    (%si),%si
+0x0000eef4 in ?? ()
+(gdb) 
+[f000:eef9]    0xfeef9:	lea    0x1(%bp),%ax
+0x0000eef9 in ?? ()
+(gdb) 
+[f000:eefe]    0xfeefe:	mov    %ax,(%si)
+0x0000eefe in ?? ()
+(gdb) 
+[f000:ef03]    0xfef03:	jmp    0x8376ec78
+0x0000ef03 in ?? ()
+(gdb) 
+[f000:ec76]    0xfec76:	mov    (%si),%ax
+0x0000ec76 in ?? ()
+(gdb) 
+[f000:ec7b]    0xfec7b:	mov    %cs:(%bx,%si),%al
+0x0000ec7b in ?? ()
+(gdb) 
+[f000:ec7f]    0xfec7f:	test   %al,%al
+0x0000ec7f in ?? ()
+(gdb) 
+[f000:ec81]    0xfec81:	je     0x254bef08
+0x0000ec81 in ?? ()
+(gdb) 
+[f000:ec85]    0xfec85:	cmp    $0x25,%al
+0x0000ec85 in ?? ()
+(gdb) 
+[f000:ec87]    0xfec87:	jne    0xfec9e
+0x0000ec87 in ?? ()
+(gdb) 
+[f000:ec9e]    0xfec9e:	movsbw %al,%ax
+0x0000ec9e in ?? ()
+(gdb) 
+[f000:eca2]    0xfeca2:	jmp    0xfa8feef0
+0x0000eca2 in ?? ()
+(gdb) 
+[f000:eeee]    0xfeeee:	callw  0x6dbf
+0x0000eeee in ?? ()
+(gdb) 
+[f000:6dc1]    0xf6dc1:	mov    %cs:(%esi),%edx
+0x00006dc1 in ?? ()
+(gdb) 
+[f000:6dc6]    0xf6dc6:	test   %edx,%edx
+0x00006dc6 in ?? ()
+(gdb) 
+[f000:6dc8]    0xf6dc8:	je     0xf6dcb
+0x00006dc8 in ?? ()
+(gdb) 
+[f000:6dcb]    0xf6dcb:	retw   
+0x00006dcb in ?? ()
+(gdb) 
+[f000:eef4]    0xfeef4:	mov    (%si),%si
+0x0000eef4 in ?? ()
+(gdb) 
+[f000:eef9]    0xfeef9:	lea    0x1(%bp),%ax
+0x0000eef9 in ?? ()
+(gdb) 
+[f000:eefe]    0xfeefe:	mov    %ax,(%si)
+0x0000eefe in ?? ()
+(gdb) 
+[f000:ef03]    0xfef03:	jmp    0x8376ec78
+0x0000ef03 in ?? ()
+(gdb) 
+[f000:ec76]    0xfec76:	mov    (%si),%ax
+0x0000ec76 in ?? ()
+(gdb) 
+[f000:ec7b]    0xfec7b:	mov    %cs:(%bx,%si),%al
+0x0000ec7b in ?? ()
+(gdb) 
+[f000:ec7f]    0xfec7f:	test   %al,%al
+0x0000ec7f in ?? ()
+(gdb) 
+[f000:ec81]    0xfec81:	je     0x254bef08
+0x0000ec81 in ?? ()
+(gdb) 
+[f000:ec85]    0xfec85:	cmp    $0x25,%al
+0x0000ec85 in ?? ()
+(gdb) 
+[f000:ec87]    0xfec87:	jne    0xfec9e
+0x0000ec87 in ?? ()
+(gdb) 
+[f000:ec9e]    0xfec9e:	movsbw %al,%ax
+0x0000ec9e in ?? ()
+(gdb) 
+[f000:eca2]    0xfeca2:	jmp    0xfa8feef0
+0x0000eca2 in ?? ()
+(gdb) 
+[f000:eeee]    0xfeeee:	callw  0x6dbf
+0x0000eeee in ?? ()
+(gdb) 
+[f000:6dc1]    0xf6dc1:	mov    %cs:(%esi),%edx
+0x00006dc1 in ?? ()
+(gdb) 
+[f000:6dc6]    0xf6dc6:	test   %edx,%edx
+0x00006dc6 in ?? ()
+(gdb) 
+[f000:6dc8]    0xf6dc8:	je     0xf6dcb
+0x00006dc8 in ?? ()
+(gdb) 
+[f000:6dcb]    0xf6dcb:	retw   
+0x00006dcb in ?? ()
+(gdb) 
+[f000:eef4]    0xfeef4:	mov    (%si),%si
+0x0000eef4 in ?? ()
+(gdb) 
+[f000:eef9]    0xfeef9:	lea    0x1(%bp),%ax
+0x0000eef9 in ?? ()
+(gdb) 
+[f000:eefe]    0xfeefe:	mov    %ax,(%si)
+0x0000eefe in ?? ()
+(gdb) 
+[f000:ef03]    0xfef03:	jmp    0x8376ec78
+0x0000ef03 in ?? ()
+(gdb) 
+[f000:ec76]    0xfec76:	mov    (%si),%ax
+0x0000ec76 in ?? ()
+(gdb) 
+[f000:ec7b]    0xfec7b:	mov    %cs:(%bx,%si),%al
+0x0000ec7b in ?? ()
+(gdb) 
+[f000:ec7f]    0xfec7f:	test   %al,%al
+0x0000ec7f in ?? ()
+(gdb) 
+[f000:ec81]    0xfec81:	je     0x254bef08
+0x0000ec81 in ?? ()
+(gdb) 
+[f000:ec85]    0xfec85:	cmp    $0x25,%al
+0x0000ec85 in ?? ()
+(gdb) 
+[f000:ec87]    0xfec87:	jne    0xfec9e
+0x0000ec87 in ?? ()
+(gdb) 
+[f000:ec9e]    0xfec9e:	movsbw %al,%ax
+0x0000ec9e in ?? ()

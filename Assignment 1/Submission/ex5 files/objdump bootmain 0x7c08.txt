@@ -1,0 +1,25 @@
+
+bootblock.o:     file format elf32-i386
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001d3  00007c08  00007c08  00000074  2**2
+                  CONTENTS, ALLOC, LOAD, CODE
+  1 .eh_frame     000000b0  00007ddc  00007ddc  00000248  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .comment      00000024  00000000  00000000  000002f8  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000040  00000000  00000000  00000320  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  4 .debug_info   000005d2  00000000  00000000  00000360  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  5 .debug_abbrev 0000022c  00000000  00000000  00000932  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  6 .debug_line   0000029a  00000000  00000000  00000b5e  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  7 .debug_str    00000229  00000000  00000000  00000df8  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_loc    000002bb  00000000  00000000  00001021  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_ranges 00000078  00000000  00000000  000012dc  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS

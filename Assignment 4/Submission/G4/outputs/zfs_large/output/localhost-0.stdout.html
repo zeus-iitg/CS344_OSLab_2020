@@ -1,0 +1,108 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+17:37:35.600 17:37:35.599 SlaveJvm execution parameter:  '-m localhost'
+17:37:35.601 17:37:35.601 SlaveJvm execution parameter:  '-n localhost-10-201124-17.37.35.210'
+17:37:35.601 17:37:35.601 SlaveJvm execution parameter:  '-l localhost-0'
+17:37:35.602 17:37:35.602 SlaveJvm execution parameter:  '-p 5570'
+17:37:35.603 17:37:35.602 SlaveJvm positional parameter: 'SlaveJvm'
+17:37:35.662 17:37:35.661 successfully connected to master localhost
+17:37:35.663 17:37:35.663 Connection to localhost using port 5570 successful
+17:37:36.135 17:37:36.134 ticks_per_second: 100
+17:37:36.142 17:37:36.142 execute(): ls -l /zfs_pool
+17:37:36.214 17:37:36.214 Configuration interpretation took 0.05 seconds
+
+Link to Run Definitions:         <A HREF="#_846063400">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_627150481">rd1 For loops: None</A>
+
+17:37:36.476 17:37:36.475 File '/var/log/messages' does not exist. Monitoring bypassed
+17:37:36.476 17:37:36.476 File '/var/log/messages.1' does not exist. Monitoring bypassed
+17:37:36.477 17:37:36.477 Beginning of run setup
+17:37:36.477 17:37:36.477 **********************
+17:37:36.477 
+17:37:36.477 
+17:37:36.550 17:37:36.550 Deleting old file structure.
+17:37:36.553 17:37:36.553 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+17:37:36.557 17:37:36.557 Completed the creation of the directory list for /zfs_pool: 1 directories.
+17:37:36.558 17:37:36.558 Generated 2 file names; total anchor size: 2g (2,147,483,648)
+17:37:36.559 17:37:36.559 Writing control file for anchor=/zfs_pool at start of run.
+17:37:36.592 17:37:36.590 Completed control file for anchor=/zfs_pool at start of run.  dirs: 1/0 files: 2/0 sizes: 2g/0/0/0
+17:37:36.602 17:37:36.602 Completed initializeFileAnchor for fsd1: 0.05
+17:37:36.656 17:37:36.656 Started 8 threads for fwd=format,fsd=fsd1
+17:37:36.656 17:37:36.656 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+17:37:36.656 17:37:36.656 Waiting for task synchronization
+17:37:36.657 17:37:36.656 task_wait_start_complete: FwgThread OpFormat /zfs_pool 1
+17:37:36.858 17:37:36.857 Requesting full garbage collection
+17:37:36.866 17:37:36.865 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   990 curr:   124 used:    30 free:    93 
+17:37:36.913 17:37:36.913 GcTracker: cum:   1 intv:  1 ms:      45 mss:  0.00% Heap_MB max:   990 curr:   124 used:    17 free:   107 
+17:37:36.915 17:37:36.915 task_wait_start_complete() end
+
+<a name="_846063400"></a><i><b>17:37:37.008 Starting RD=format_for_rd1</b></i>
+
+17:37:37.020 17:37:37.019 task_run_all(): 9 tasks
+17:37:37.326 17:37:37.326 Message to master: anchor=/zfs_pool mkdir complete.
+17:37:52.823 17:37:52.823 Message to master: anchor=/zfs_pool create complete.
+17:37:52.959 17:37:52.958 
+17:37:52.959 17:37:52.959 Miscellaneous statistics:
+17:37:52.960 17:37:52.960 FILE_CREATES        Files created:                                    2
+17:37:52.960 17:37:52.960 DIRECTORY_CREATES   Directories created:                              1
+17:37:52.968 17:37:52.968 FILE_DELETES        Files deleted:                                  450
+17:37:52.969 17:37:52.969 DIRECTORY_DELETES   Directories deleted:                             12
+17:37:52.969 17:37:52.969 WRITE_OPENS         Files opened for write activity:                  2
+17:37:52.970 17:37:52.970 DIR_EXISTS          Directory may not exist (yet):                    3
+17:37:52.976 17:37:52.971 FILE_CLOSES         Close requests:                                   2
+17:37:52.976 17:37:52.976 
+17:37:52.977 17:37:52.977 Java Heap in MB. max:  989.875; current:  123.938; used:   27.301; free:   96.636
+17:37:52.987 17:37:52.986 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+17:37:53.208 17:37:53.207 Writing control file for anchor=/zfs_pool at end of run.
+17:37:53.273 17:37:53.267 Completed control file for anchor=/zfs_pool at end of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/2/2g
+17:37:53.273 17:37:53.268 End of run
+17:37:53.273 17:37:53.268 **********
+17:37:53.273 
+17:37:53.273 
+17:37:53.406 17:37:53.406 Beginning of run setup
+17:37:53.406 17:37:53.406 **********************
+17:37:53.406 
+17:37:53.406 
+17:37:53.473 17:37:53.473 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+17:37:53.480 17:37:53.479 Reading control file for anchor=/zfs_pool
+17:37:53.481 17:37:53.481 Completed reading control file.
+17:37:53.483 17:37:53.482 Completed the creation of the directory list for /zfs_pool: 1 directories.
+17:37:53.485 17:37:53.484 Generated 2 file names; total anchor size: 2g (2,147,483,648)
+17:37:53.485 17:37:53.485 Writing control file for anchor=/zfs_pool at start of run.
+17:37:53.502 17:37:53.500 Completed control file for anchor=/zfs_pool at start of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/0/0
+17:37:53.502 17:37:53.500 During anchor creation for anchor=/zfs_pool there were 1 directories and 2 files
+17:37:53.502 17:37:53.500 Completed initializeFileAnchor for fsd1: 0.03
+17:37:53.507 17:37:53.506 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=create
+17:37:53.507 17:37:53.506 Started 2 FwgThreads for rd=rd1 For loops: None
+17:37:53.507 17:37:53.506 Waiting for task synchronization
+17:37:53.507 17:37:53.506 task_wait_start_complete: FwgWaiter 1
+17:37:53.708 17:37:53.707 Requesting full garbage collection
+17:37:53.711 17:37:53.710 GcTracker: cum:   1 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   990 curr:   124 used:    32 free:    92 
+17:37:53.764 17:37:53.764 GcTracker: cum:   2 intv:  1 ms:      49 mss:  0.00% Heap_MB max:   990 curr:   124 used:    19 free:   105 
+17:37:53.765 17:37:53.765 task_wait_start_complete() end
+
+<a name="_627150481"></a><i><b>17:37:54.003 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+17:37:54.017 17:37:54.013 task_run_all(): 3 tasks
+17:37:54.515 17:37:54.512 Anchor: /zfs_pool
+17:37:54.516 17:37:54.513 Vdbench is trying to create a new file, but all files already exist, 
+17:37:54.516 17:37:54.513 and no threads are currently active deleting files
+17:37:54.516 17:37:54.513 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+17:37:54.516 17:37:54.514 
+17:37:54.516 17:37:54.514 sendMessageToConsole: Anchor: /zfs_pool
+17:37:54.516 17:37:54.514 sendMessageToConsole: Vdbench is trying to create a new file, but all files already exist, 
+17:37:54.523 17:37:54.515 sendMessageToConsole: and no threads are currently active deleting files
+17:37:54.524 17:37:54.524 sendMessageToConsole: FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+17:37:54.531 17:37:54.531 sendMessageToConsole: 
+17:37:54.644 17:37:54.644 Miscellaneous statistics: All counters are zero
+17:37:54.645 17:37:54.644 Java Heap in MB. max:  989.875; current:  123.875; used:   21.215; free:  102.660
+17:37:54.645 17:37:54.645 Maximum native memory allocation:    1,056,768; Current allocation:        8,192
+17:37:55.097 17:37:55.096 Writing control file for anchor=/zfs_pool at end of run.
+17:37:55.129 17:37:55.128 Completed control file for anchor=/zfs_pool at end of run.  dirs: 1/1 files: 2/2 sizes: 2g/2g/0/0
+17:37:55.129 17:37:55.128 End of run
+17:37:55.129 17:37:55.128 **********
+17:37:55.129 
+17:37:55.129 
+17:37:55.307 17:37:55.306 Master is requesting slave shutdown
+17:37:55.310 17:37:55.308 Java Heap in MB. max:  989.875; current:  123.875; used:   22.421; free:  101.454

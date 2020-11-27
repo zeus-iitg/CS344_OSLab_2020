@@ -1,0 +1,8 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: /home/theharshshow/vdbench/workload2
+
+fsd=fsd1,anchor=$anchor,depth=0,width=1,files=2,size=1G
+    variable substitution: fsd=fsd1,anchor=/zfs_pool,depth=0,width=1,files=2,size=1G
+fwd=fwd1,fsd=fsd1,operation=create,fileio=sequential,fileselect=random,threads=2
+rd=rd1,fwd=fwd1,fwdrate=max,format=yes,elapsed=30,interval=1

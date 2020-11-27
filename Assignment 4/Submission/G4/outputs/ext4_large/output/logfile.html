@@ -1,0 +1,89 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+17:41:07.866 input argument scanned: '-fworkload2'
+17:41:07.866 input argument scanned: 'anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e'
+17:41:07.867 java.vendor                   Ubuntu
+17:41:07.867 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+17:41:07.868 java.vm.specification.version 11
+17:41:07.868 java.vm.version               11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+17:41:07.868 java.vm.vendor                Ubuntu
+17:41:07.869 java.specification.version    11
+17:41:07.869 java.class.version            55.0
+17:41:07.869 user.name                     root
+17:41:07.869 user.dir                      /home/theharshshow/vdbench
+17:41:07.870 java.io.tmpdir                /tmp
+17:41:07.870 java.class.path               ./:./classes:./vdbench.jar
+17:41:07.870 os.name                       Linux
+17:41:07.870 os.arch                       amd64
+17:41:07.870 os.version                    5.4.0-54-generic
+17:41:07.870 sun.arch.data.model           64
+17:41:07.885 Flushing all reports
+17:41:07.933 Creating anchor for /mnt/54561fbe-141d-4334-a55f-92cd1c8b489e,fsd=fsd1
+17:41:07.982 rd1 fsd to format: fsd1
+17:41:07.983 rd1 format on host: localhost
+17:41:07.987 Anchor size: anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e: dirs:            0; files:            2; bytes:     2.000g (2,147,483,648)
+17:41:08.078 Starting slave: /home/theharshshow/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201124-17.41.07.768 -l localhost-0 -p 5570   
+17:41:08.568 Slave localhost-0 (pid  17289) connected to master 17265
+17:41:08.661 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_846063400">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_627150481">rd1 For loops: None</A>
+
+17:41:09.004 Flushing all reports
+17:41:09.007 slv=localhost-0 fwd=format fsd=fsd1 anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e threads= 8 skew= 0.00 operation=read 
+17:41:09.087 Waiting for synchronization of all slaves
+17:41:09.690 Synchronization of all slaves complete
+
+<a name="_846063400"></a><i><b>17:41:10.012 Starting RD=format_for_rd1</b></i>
+
+17:41:10.365 localhost-0: anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e mkdir complete.
+Nov 24, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+17:41:11.301            1 4106.0  0.293  55.3 26.5   0.0    0.0  0.000 4106.0  0.293  0.00 513.2 513.25  131072   1.0  4.628   0.0  0.000   0.0  0.000   2.0  1.170   0.0  0.000   0.0  0.000
+17:41:12.057            2 4599.0  0.410  83.6 56.9   0.0    0.0  0.000 4599.0  0.410  0.00 574.8 574.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:41:13.041            3 5289.0  0.378  80.5 65.0   0.0    0.0  0.000 5289.0  0.378  0.00 661.1 661.12  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:41:13.447 localhost-0: anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e create complete.
+17:41:14.093            4 2390.0  0.372  45.6 29.1   0.0    0.0  0.000 2390.0  0.372  0.00 298.7 298.75  131072   0.0  0.000   0.0  0.000   2.0 3075.7   0.0  0.000   2.0  0.043   0.0  0.000
+17:41:14.111      avg_2-4 4092.7  0.389  71.1 51.4   0.0    0.0  0.000 4092.7  0.389  0.00 511.5 511.58  131072   0.0  0.000   0.0  0.000   0.7 3075.7   0.0  0.000   0.7  0.043   0.0  0.000
+17:41:14.115      std_2-4 1514.4  2.116                                1514.4  2.116                                                        1.2  3.750                1.2  0.048             
+17:41:14.124      max_2-4 5289.0 48.025                                5289.0 48.025                                   4.628                2.0 3078.3        1.716   2.0  0.077             
+17:41:14.324 
+17:41:14.325 Miscellaneous statistics:
+17:41:14.325 (These statistics do not include activity between the last reported interval and shutdown.)
+17:41:14.325 FILE_CREATES        Files created:                                    2          0/sec
+17:41:14.325 DIRECTORY_CREATES   Directories created:                              1          0/sec
+17:41:14.325 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+17:41:14.326 DIR_BUSY_MKDIR      Directory busy (mkdir):                           3          0/sec
+17:41:14.327 DIR_EXISTS          Directory may not exist (yet):                    2          0/sec
+17:41:14.327 FILE_CLOSES         Close requests:                                   2          0/sec
+17:41:14.328 
+17:41:14.328 Flushing all reports
+17:41:14.334 Java Heap in MB. max:  494.938; current:   61.875; used:   20.343; free:   41.532
+17:41:14.368 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/mnt/54561fbe-141d-4334-a55f-92cd1c8b489e threads= 2 skew= 0.00 operation=create 
+17:41:14.378 Waiting for synchronization of all slaves
+17:41:14.880 Synchronization of all slaves complete
+
+<a name="_627150481"></a><i><b>17:41:15.000 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+17:41:15.061 
+17:41:15.063 Message from slave localhost-0: 
+17:41:15.063 Anchor: /mnt/54561fbe-141d-4334-a55f-92cd1c8b489e
+17:41:15.063 Vdbench is trying to create a new file, but all files already exist, 
+17:41:15.063 and no threads are currently active deleting files
+17:41:15.064 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+17:41:15.065 
+Nov 24, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+17:41:16.014            1    0.0  0.000  51.0 4.17   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+17:41:16.026      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+17:41:16.026      std_2-1                                                                                                                                                                    
+17:41:16.027      max_2-1                                                                                                                                                                    
+17:41:16.139 Miscellaneous statistics: All counters are zero
+17:41:16.139 Flushing all reports
+17:41:16.139 Java Heap in MB. max:  494.938; current:   62.000; used:   20.276; free:   41.724
+17:41:16.154 Ending Reporter
+17:41:17.119 Vdbench execution completed successfully. Output directory: /home/theharshshow/vdbench/output 
+
+17:41:18.129 Java Heap in MB. max:  494.938; current:   62.000; used:   17.439; free:   44.561
